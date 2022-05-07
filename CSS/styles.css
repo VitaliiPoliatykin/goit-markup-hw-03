@@ -44,7 +44,7 @@ img {
   margin: -1px;
 }
 .container {
-  outline: 1px dotted yellow;
+  outline: 1px dotted red;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -86,10 +86,12 @@ img {
   color: var(--accent-cl);
 }
 /* Header */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 .logo {
   font-family: var(--secondary-font);
@@ -107,7 +109,6 @@ img {
   color: #000000;
 }
 .navigation-list {
-  margin-right: 331px;
   align-items: center;
   display: flex;
 }
@@ -188,19 +189,32 @@ img {
 .hero-btn:focus {
   background-color: #188ce8;
 }
+
+.advantages-list {
+  display: flex;
+  align-items: flex-start;
+}
+.advantages-item {
+  margin-right: 30px;
+}
+.advantages-item:last-child {
+  margin-right: 0px;
+}
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
-
 .advantages-description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  max-width: 270px;
+  max-height: 75px;
 }
 .direction-title,
 .team-title {
@@ -209,9 +223,30 @@ img {
   line-height: 1.17px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
+
+.direction-list {
+  display: flex;
+  align-items: center;
+}
+.direction-item {
+  margin-right: 30px;
+}
+.direction-item:last-child {
+  margin-right: 0px;
+}
+
 .team {
   background-color: #f5f4fa;
+}
+.team-list {
+  display: flex;
+  align-items: center;
+}
+.team-item {
+  background-color: var(--main-bg-cl);
+  margin-right: 30px;
 }
 .photo-title {
   font-weight: 500;
@@ -219,6 +254,7 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .position {
   font-size: 16px;
@@ -227,9 +263,11 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.team-item {
-  background-color: var(--main-bg-cl);
+.photo-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
 /* Footer */
 .footer {
   padding-top: 60px;
