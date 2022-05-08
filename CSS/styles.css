@@ -69,6 +69,7 @@ img {
   border-style: none;
   font-family: inherit;
   color: inherit;
+  border-radius: 4px;
 }
 .btn:hover,
 .btn:focus {
@@ -274,6 +275,12 @@ img {
   padding-bottom: 60px;
   background-color: var(--secondary-bg-cl);
 }
+.footer-item {
+  margin-bottom: 9px;
+}
+.footer-item:last-child {
+  margin-bottom: 0px;
+}
 .footer-studio {
   color: var(--secondary-txt-cl);
 }
@@ -292,6 +299,10 @@ img {
 .footer-list {
   font-style: normal;
 }
+.logo-footer {
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
 
 /* PORTFOLIO */
 .gallery .filter-btn.current {
@@ -304,7 +315,19 @@ img {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  background: #f5f4fa;
+  background-color: #f5f4fa;
+  padding: 6px 22px;
+}
+.filter-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter-item {
+  margin-right: 8px;
+}
+.filter-item:last-child {
+  margin-right: 0px;
 }
 .project-title {
   font-weight: 700;
