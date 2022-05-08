@@ -44,7 +44,6 @@ img {
   margin: -1px;
 }
 .container {
-  outline: 1px dotted red;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -221,7 +220,6 @@ img {
 .team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
@@ -322,12 +320,29 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filter-item {
   margin-right: 8px;
 }
 .filter-item:last-child {
   margin-right: 0px;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.projects-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.project-description {
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 .project-title {
   font-weight: 700;
